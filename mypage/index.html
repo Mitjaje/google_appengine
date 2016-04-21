@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Mirko Hairdresser</title>
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/scrolling-nav.css">   
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>  
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+          width: 70%;
+          margin: auto; 
+        }
+        .product .img-responsive {
+            margin: 0 auto;
+        }    
+    </style>      
+  </head>
+  <body>
+      <h4>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">                 
+                  <a class="navbar-brand" href="#">Mirko Hairdresser</a>
+                </div>            
+               <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="#services">Kaj nudimo</a></li>
+                    <li><a class="page-scroll" href="#contactUs">Naroči se</a></li>
+                    <li><a class="page-scroll" href="#faq">FAQ</a></li>
+                 <li><a class="page-scroll" href="#contact">Kontakt</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">O nas</a></li>
+                    <div class="col-md-4 pull-right">  
+                        <form class="navbar-form" role="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" aria-label="...">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                            </div>  
+                        </form>
+                    </div>
+                </ul>
+            </div>
+        </nav>    
+      </h4>
+      <br>
+      <section id="intro" class="intro-section">
+      <div class="container">
+          <br>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        <!--    <li data-target="#myCarousel" data-slide-to="3"></li>-->
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/hair1.jpg" class="img-rounded" class="img-responsive">
+            </div>
+            <div class="item">
+              <img src="images/hair2.jpg" class="img-rounded" class="img-responsive">
+            </div>
+            <div class="item">
+              <img src="images/hair3.jpg"  class="img-rounded" class="img-responsive">
+            </div>
+          </div>
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>  
+      </div>
+    </section>
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 align="center">
+                Kaj nudimo
+            </h2> 
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="caption">
+                        <h3>Nega las</h3>
+                        <br>
+                        <div class="thumbnail">
+                            <img src="images/hair1.jpg" class="img-rounded" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="caption">
+                        <h3>Barvanje</h3>
+                        <br>
+                        <div class="thumbnail">
+                            <img src="images/hair2.jpg" class="img-rounded" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="caption">
+                        <h3>Striženje</h3>
+                        <br>
+                        <div class="thumbnail">
+                            <img src="images/hair3.jpg"  class="img-rounded" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contactUs" class="contactUs-section">
+        <div class="container">            
+            <div class="row">
+                <h2 align="center">
+                    Naroči se
+                </h2>
+                <div class="col-lg-5 pull-left">
+                     <br>
+                     <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ime:" id="name">
+                     </div>
+                     <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Priimek" id="lastname">
+                     </div>
+                     <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Termin:" id="date">
+                     </div>
+                     <div class="form-group">
+                        <textarea class="form-control" placeholder="Ostalo(želje glede pričeske itd.)" rows="3" id="comment"></textarea>
+                    </div> 
+                    <div class="row">
+                        <div class="col-lg-10">                           
+                            <div>
+                                Strinjam se, da je Mirko najboljši frizer.
+                            </div>  
+                             <input type="checkbox" id="checkbox1" class="checkbox style-2 " checked="checked"/> 
+                        </div>                     
+                        <div class="col-lg-2 pull-right">
+                            <button type="button" class="btn btn-primary btn-md pull-right">Pošlji</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pull-right">  
+                   <br>
+                   <br>
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Dan</th>
+                            <th>Delovne ure</th>               
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Ponedeljek</td>
+                            <td>8:00-16:00</td>
+                          </tr>
+                          <tr>
+                            <td>Torek</td>
+                            <td>10:00-18:00</td>
+                          </tr>
+                          <tr>
+                            <td>Sreda</td>
+                            <td>8:00-16:00</td>
+                          </tr>
+                          <tr>
+                            <td>Četrtek</td>
+                            <td>8:00-16:00</td>
+                          </tr>
+                          <tr>
+                            <td>Petek</td>
+                            <td>12:00-20:00</td>
+                          </tr>
+                          <tr>
+                            <td>Sobota</td>
+                            <td>8:00-16:00</td>
+                          </tr>
+                          <tr>
+                            <td>Nedelja</td>
+                            <td>8:00-12:00</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        *Ob praznikih velja nedeljski urnik
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="faq-section"> 
+        <h2 align="center">
+            FAQ(Pogosta vprašanja)
+        </h2>   
+        <br>  
+      <div class="container"> 
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Kakšen je salon in ekipa?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Ali sprejemate hišne ljubljenčke?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Imate kakšne nagrade iz tekmovanj?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>  
+    </div> 
+    </section>
+      <!--Modal-->
+     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">O nas</h4>
+          </div>
+          <div class="modal-body">
+             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+          <div align="center">
+            <img src="images/building.jpg" class="img-rounded" class="img-responsive" style="width:500px;height:300px">  
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Zapri</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <section id="contact" class="contact-section"> 
+    <div class="container">  
+        <div class="row">
+            <div class="col-md-5 pull-center">
+                <h4>Kontakt</h4>
+                <div>Frizer Mirko s.p.</div>
+                <div>Davčna št.: 32432434</div>
+                <div>Frizerska ulica 5,1000 Ljubljana</div>
+                <div>Tel.: 01/34543546</div>
+                <div>Email:frizer.mirko@f-mirko.com</div>    
+                <br>
+            </div>
+            <div class="col-md-2">
+                <a class="thumbnail">
+                    <img src="images/mh_logo_final_1.jpg" class="img-rounded" class="img-responsive" style="width:150px;height:150px">
+                </a> 
+            </div>
+            <div class="col-md-2 pull-right">
+                <h4>Navigacija</h4>
+                <li><a class="page-scroll" href="#services">Kaj nudimo</a></li>
+                <li><a class="page-scroll" href="#contactUs">Naroči se</a></li>
+                <li><a class="page-scroll" href="#faq">Pogosta vprašanja</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModal">O nas</a></li>
+            </div>
+        </div>
+    </div> 
+    </section>
+  </body>
+</html>
